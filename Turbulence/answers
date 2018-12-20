@@ -1,0 +1,17 @@
+ tar xvzf MECH326LabTest2.tar.gz 
+
+$qcc -O2 -Wall turbulence2d.c -o turbulence2d -lm
+$./turbulence2d >2log
+$ animate omega.ppm
+
+$qcc -O2 -Wall turbulence2d.c -o turbulence2d -lm
+$./turbulence2d >2log128
+$ animate omega.ppm128
+
+
+$qcc -O2 -Wall turbulence2d.c -o turbulence2d -lm
+$./turbulence2d >2log256
+$ animate omega.ppm256
+
+
+we can compare the 3 ppm images and as w result the refinement of the mesh increased the pixels in the ppm which became more clearer since the step size is increased 
