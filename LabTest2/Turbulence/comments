@@ -1,0 +1,21 @@
+1)qcc -O2 turbulence.c -lm
+
+./a.out >out64
+
+
+
+2)animate omega64.ppm
+
+
+	
+3)I changed the init_grid value to 128 and changed "omega.ppm" to "omega128.ppm"
+
+qcc -O2 turbulence.c -lm
+
+./a.out >out128
+
+animate omega128.ppm
+
+
+
+4)As we increased the resolution from 64^2 to 128^2 to 256^2 the more pixels the omega.ppm file has and the more the animation becomes detailed. In addition the higher the resolution the more steps needed to get the results. 
